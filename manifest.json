@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Qualified Candidates",
+    "version": "1.0",
+    "description": "Find the best candidates on Linkedin",
+    "web_accessible_resources": [
+      "images/tristanLinkedin.png"
+    ], 
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/*"],  
+        "js": ["./main.js"]
+      }
+    ]
+  }
